@@ -1,0 +1,3 @@
+include ':dexposed'
+include ':sample:dexposedexamples:app'
+include ':sample:patchsample:app'

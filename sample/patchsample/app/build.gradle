@@ -1,8 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+//    compileSdkVersion 21
+//    buildToolsVersion "21.1.2"
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
         applicationId "com.taobao.service.hotpatch"
@@ -21,4 +23,5 @@ android {
 dependencies {
     provided files('libs/dexposedbridge.jar')
     provided files('libs/patchloader.jar')
+//    compile project(':dexposed')
 }
